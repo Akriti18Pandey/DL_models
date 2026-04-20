@@ -58,9 +58,6 @@ page_bg = f"""
     bottom: 0;
     background: rgba(0,0,0,0.6);
 }}
-[data-testid="stAppViewContainer"]::before {
-    z-index: -1;  
-}
 
 /* Header transparent */
 [data-testid="stHeader"] {{
