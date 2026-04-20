@@ -57,16 +57,7 @@ page_bg = f"""
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.6);
-    z-index: -1;
 }}
-
-header, .sToolbar {
-    z-index: 999 !important;
-}
-
-[data-testid="stSidebar"] {
-    z-index: 1000 !important;
-}
 
 /* Header transparent */
 [data-testid="stHeader"] {{
