@@ -330,6 +330,67 @@ if user:
         
     elif "process" in user_lower or "selection" in user_lower and "cts" in user_lower:
         response = "NSTI: Selection is based on merit calculated from marks obtained in the 10th class examination."
+
+
+    elif any(word in user_lower for word in ["admission start", "admissions starting", "when admission start"]):
+        response = "NSTI: Admissions for CTS generally start in May, and for CITS from April."
+
+    elif any(word in user_lower for word in ["last date admission", "admission last date"]):
+        response = "NSTI: The last date for admission varies every year. Please check the official website for updates."
+
+    elif any(word in user_lower for word in ["admission process", "how admission works"]):
+        response = "NSTI: Admission is done through merit (CTS) or entrance exam (CITS), followed by document verification."
+
+    elif any(word in user_lower for word in ["selection process", "how selection"]):
+        response = "NSTI: Selection is based on 10th marks for CTS and AICET exam for CITS."
+
+    elif any(word in user_lower for word in ["registration", "register for admission"]):
+        response = "NSTI: You need to register online through the official NSTI/DGT portal."
+
+    elif any(word in user_lower for word in ["form fill", "application form"]):
+        response = "NSTI: Application forms are filled online during the admission period."
+
+    elif any(word in user_lower for word in ["fees payment", "how to pay fees"]):
+        response = "NSTI: Fees can be paid online or as per institute instructions during admission."
+
+    elif any(word in user_lower for word in ["seat availability", "available seats"]):
+        response = "NSTI: Seats are limited and allotted based on merit or entrance exam rank."
+
+    elif any(word in user_lower for word in ["reservation", "quota"]):
+        response = "NSTI: Reservation is provided as per government rules."
+
+    elif any(word in user_lower for word in ["counselling", "admission counselling"]):
+        response = "NSTI: Counselling may be conducted for seat allocation after selection."
+
+    elif any(word in user_lower for word in ["admission confirmation", "confirm admission"]):
+        response = "NSTI: Admission is confirmed after document verification and fee payment."
+
+    elif any(word in user_lower for word in ["offline admission", "can i apply offline"]):
+        response = "NSTI: Admissions are generally done online. Offline process may not be available."
+
+    elif any(word in user_lower for word in ["multiple courses", "apply for more than one course"]):
+        response = "NSTI: You may apply for multiple courses depending on eligibility and rules."
+
+    elif any(word in user_lower for word in ["rejection", "admission rejected"]):
+        response = "NSTI: Admission may be rejected if eligibility criteria or documents are not correct."
+
+    elif any(word in user_lower for word in ["waiting list", "waitlist"]):
+        response = "NSTI: Waiting list candidates may get admission if seats remain vacant."
+
+    elif any(word in user_lower for word in ["direct admission"]):
+        response = "NSTI: Direct admission depends on seat availability and institute rules."
+
+    elif any(word in user_lower for word in ["late admission", "can i apply late"]):
+        response = "NSTI: Late admission depends on availability of seats and institute decision."
+
+    elif any(word in user_lower for word in ["admission help", "need help admission"]):
+        response = "NSTI: You can contact the institute for help regarding admission process."
+
+    elif any(word in user_lower for word in ["admission eligibility cts"]):
+        response = "NSTI: For CTS, minimum eligibility is 10th pass."
+
+    elif any(word in user_lower for word in ["admission eligibility cits"]):
+        response = "NSTI: For CITS, you need ITI/Diploma in relevant trade."
         
     elif "process" in user_lower or "selection" in user_lower and "cits" in user_lower:
         response = "NSTI: The CITS selection process at NSTIs involves passing the All India Common Entrance Test (AICET), typically conducted online by DGT/NIMI in June/July."
@@ -393,6 +454,67 @@ if user:
 
     elif any(word in user_lower for word in ["holiday list", "calendar"]):
         response = "NSTI: Holidays are given as per government and institutional calendar."
+
+
+    elif any(word in user_lower for word in ["documents", "required documents"]):
+        response = "NSTI: Required documents include 10th marksheet,Valid ID proof(Aadhar card), passport size photos, and category certificate (if applicable),medical certificate."
+
+    elif any(word in user_lower for word in ["which documents", "what documents"]):
+        response = "NSTI: You need educational certificates, ID proof, photographs, and other supporting documents during admission."
+
+    elif any(word in user_lower for word in ["original documents", "original required"]):
+        response = "NSTI: Yes, original documents are required for verification during admission."
+
+    elif any(word in user_lower for word in ["photocopy", "xerox"]):
+        response = "NSTI: You should carry photocopies (xerox) of all documents along with originals."
+
+    elif any(word in user_lower for word in ["how many photos", "passport photo"]):
+        response = "NSTI: Usually 4–6 passport size photographs are required."
+
+    elif any(word in user_lower for word in ["id proof", "identity proof"]):
+        response = "NSTI: ID proof can be Aadhaar card, voter ID, or any government-issued identity."
+
+    elif any(word in user_lower for word in ["address proof"]):
+        response = "NSTI: Address proof like Aadhaar card, ration card, or electricity bill may be required."
+
+    elif any(word in user_lower for word in ["category certificate", "caste certificate"]):
+        response = "NSTI: Category certificate is required for SC/ST/OBC candidates as per government rules."
+
+    elif any(word in user_lower for word in ["income certificate"]):
+        response = "NSTI: Income certificate may be required for scholarship or fee concession."
+
+    elif any(word in user_lower for word in ["transfer certificate", "tc"]):
+        response = "NSTI: Transfer Certificate (TC) from previous school may be required."
+
+    elif any(word in user_lower for word in ["character certificate"]):
+        response = "NSTI: A character certificate from your previous institution may be required."
+
+    elif any(word in user_lower for word in ["medical certificate"]):
+        response = "NSTI: A basic medical fitness certificate may be required during admission."
+
+    elif any(word in user_lower for word in ["signature upload", "photo upload"]):
+        response = "NSTI: During online form filling, you need to upload scanned photo and signature."
+
+    elif any(word in user_lower for word in ["document verification"]):
+        response = "NSTI: All documents are verified during admission before confirmation."
+
+    elif any(word in user_lower for word in ["missing document", "document missing"]):
+        response = "NSTI: Admission may be delayed or rejected if required documents are missing."
+
+    elif any(word in user_lower for word in ["wrong document", "incorrect document"]):
+        response = "NSTI: Incorrect documents can lead to cancellation of admission."
+
+    elif any(word in user_lower for word in ["digital documents", "online documents"]):
+        response = "NSTI: Digital copies are required for online application, but originals must be shown later."
+
+    elif any(word in user_lower for word in ["document format", "file format"]):
+        response = "NSTI: Documents should be uploaded in JPG/PDF format as per instructions."
+
+    elif any(word in user_lower for word in ["document size", "file size"]):
+        response = "NSTI: File size should follow guidelines mentioned in the application form."
+
+    elif any(word in user_lower for word in ["affidavit"]):
+        response = "NSTI: An affidavit may be required for specific conditions like gap year or declaration."
 
     elif any(word in user_lower for word in ["festival celebration", "events"]):
         response = "NSTI: Festivals and events are celebrated to encourage student participation."
