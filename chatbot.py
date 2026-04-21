@@ -332,7 +332,7 @@ if user:
         response = "NSTI: Selection is based on merit calculated from marks obtained in the 10th class examination."
 
 
-    elif any(word in user_lower for word in ["admission start", "admissions starting", "when admission start"]):
+    elif any(word in user_lower for word in ["admission", "admissions starting", "when admission start"]):
         response = "NSTI: Admissions for CTS generally start in May, and for CITS from April."
 
     elif any(word in user_lower for word in ["last date admission", "admission last date"]):
